@@ -1,25 +1,27 @@
 import {Entity, Column, PrimaryGeneratedColumn} from "typeorm";
 
+console.log(Entity);
+
 @Entity()
 export class Photo {
 
   @PrimaryGeneratedColumn()
-  id: number;
+  id: number | undefined;
 
   @Column({
     length: 100
   })
-  name: string;
+  name: string | undefined;
 
   @Column("text")
-  description: string;
+  description: string | undefined;
 
   @Column()
-  filename: string;
+  filename: string | undefined;
 
   @Column("double")
-  views: number;
+  views: number | undefined;
 
   @Column()
-  isPublished: boolean;
+  isPublished: boolean | undefined;
 }

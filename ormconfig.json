@@ -1,11 +1,11 @@
 {
    "type": "postgres",
    "host": "localhost",
-   "port": 3306,
+   "port": 5432,
    "username": "blog",
    "password": "123456",
    "database": "dev",
-   "synchronize": true,
+   "synchronize": false,
    "logging": false,
    "entities": [
       "src/entity/**/*.ts"

@@ -1,6 +1,5 @@
 import "reflect-metadata";
 import {createConnection} from "typeorm";
-import {Photo} from "../../src/entity/Photo.ts";
 
 export default (req, res) => {
 
